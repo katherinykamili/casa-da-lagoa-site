@@ -10,6 +10,8 @@ import { Footer } from "@/components/footer";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 import { siteConfig } from "@/data/site";
 
+export const dynamic = "force-static";
+
 export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",

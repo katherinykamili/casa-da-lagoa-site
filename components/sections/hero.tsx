@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { siteConfig } from "@/data/site";
+import { assetPath, siteConfig } from "@/data/site";
 import { Wave } from "@/components/wave";
 
 export function Hero() {
   return <section id="inicio" className="relative min-h-[100svh] overflow-hidden bg-[#163c35] text-[#f6f3ec]">
-    <Image src="/images/exterior-02.webp" alt="Lago e paisagem verde da Casa da Lagoa" fill priority sizes="100vw" className="object-cover object-[57%_center]" />
+    <Image src={assetPath("/images/exterior-02.webp")} alt="Lago e paisagem verde da Casa da Lagoa" fill priority sizes="100vw" className="object-cover object-[57%_center]" />
     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(12,43,37,.35),rgba(12,43,37,.18)_35%,rgba(12,43,37,.85))]" />
     <div className="container-site relative flex min-h-[100svh] flex-col justify-end pb-8 pt-28 md:pb-12">
       <div className="reveal max-w-2xl"><p className="eyebrow mb-4 text-[#d8c8ae]">Encano Alto · Indaial/SC</p><h1 className="font-display text-[clamp(4rem,13vw,8.5rem)] font-normal leading-[.74] tracking-[-.06em]">Casa da<br />Lagoa</h1><Wave className="my-6 text-[#d8c8ae]" /><p className="font-display text-[clamp(1.65rem,4vw,2.5rem)] italic">{siteConfig.slogan}</p></div>

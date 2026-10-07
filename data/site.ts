@@ -1,9 +1,15 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+export const assetPath = (path: string) => `${basePath}${path}`;
+
 export const siteConfig = {
   name: "Casa da Lagoa",
   complement: "Encano Alto",
   slogan: "um refúgio para desacelerar",
   description: "Hospedagem aconchegante cercada pela natureza no Encano Alto, em Indaial/SC. Conheça a Casa da Lagoa e consulte disponibilidade pelo Booking, Airbnb ou WhatsApp.",
-  siteUrl: "https://casa-da-lagoa-encano-alto.katherinykc13.chatgpt.site",
+  siteUrl: basePath
+    ? "https://katherinykamili.github.io/casa-da-lagoa-site/"
+    : "https://casa-da-lagoa-encano-alto.katherinykc13.chatgpt.site",
   bookingUrl: "https://www.booking.com/Share-TJTWD5",
   airbnbUrl: "https://www.airbnb.com.br/rooms/1236968788522968108?guests=1&adults=1&s=67&unique_share_id=a8691d70-da3c-4360-b670-c9db6914e644",
   phone: "+55 47 98810-5607",
@@ -15,10 +21,10 @@ export const siteConfig = {
 } as const;
 
 export const galleryImages = [
-  { src: "/images/exterior-02.webp", alt: "Lago cercado por palmeiras e natureza no Encano Alto", label: "A paisagem" },
-  { src: "/images/exterior-01.webp", alt: "Fachada rústica da Casa da Lagoa com varanda e rede", label: "A casa" },
-  { src: "/images/room-queen.webp", alt: "Quarto com cama queen e vista para o verde", label: "Quarto queen" },
-  { src: "/images/kitchen.webp", alt: "Cozinha equipada com utensílios e geladeira", label: "Cozinha" },
-  { src: "/images/hero.webp", alt: "Quarto acolhedor com cama de casal e roupas de cama", label: "Quarto casal" },
-  { src: "/images/gallery-03.webp", alt: "Detalhes de utensílios disponíveis na cozinha", label: "Detalhes" },
+  { src: assetPath("/images/exterior-02.webp"), alt: "Lago cercado por palmeiras e natureza no Encano Alto", label: "A paisagem" },
+  { src: assetPath("/images/exterior-01.webp"), alt: "Fachada rústica da Casa da Lagoa com varanda e rede", label: "A casa" },
+  { src: assetPath("/images/room-queen.webp"), alt: "Quarto com cama queen e vista para o verde", label: "Quarto queen" },
+  { src: assetPath("/images/kitchen.webp"), alt: "Cozinha equipada com utensílios e geladeira", label: "Cozinha" },
+  { src: assetPath("/images/hero.webp"), alt: "Quarto acolhedor com cama de casal e roupas de cama", label: "Quarto casal" },
+  { src: assetPath("/images/gallery-03.webp"), alt: "Detalhes de utensílios disponíveis na cozinha", label: "Detalhes" },
 ] as const;

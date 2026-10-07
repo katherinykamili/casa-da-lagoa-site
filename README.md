@@ -60,7 +60,10 @@ public/favicon.svg    ícone do site
 
 ## Publicar novamente
 
-Faça as alterações, confirme com `npm run build` e envie um novo commit. Se o provedor estiver conectado ao repositório, ele publicará automaticamente. Neste projeto, a versão pública também pode ser atualizada pelo fluxo de publicação do Codex Sites.
+Faça as alterações, confirme com `npm run build` e envie um novo commit para a branch `main`. O workflow em `.github/workflows/deploy-pages.yml` gera a versão estática e atualiza automaticamente o GitHub Pages.
+
+- GitHub Pages: `https://katherinykamili.github.io/casa-da-lagoa-site/`
+- Site principal: `https://casa-da-lagoa-encano-alto.katherinykc13.chatgpt.site/`
 
 ## Links oficiais configurados
 

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { siteConfig } from "@/data/site";
+import { assetPath, siteConfig } from "@/data/site";
 import "./globals.css";
+
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -9,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: { title: "Casa da Lagoa | Um refúgio para desacelerar", description: siteConfig.description, url: "/", siteName: "Casa da Lagoa", locale: "pt_BR", type: "website" },
   twitter: { card: "summary", title: "Casa da Lagoa | Um refúgio para desacelerar", description: siteConfig.description },
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: { icon: assetPath("/favicon.svg"), shortcut: assetPath("/favicon.svg") },
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#163c35" };
