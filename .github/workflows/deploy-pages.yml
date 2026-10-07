@@ -38,6 +38,9 @@ jobs:
         env:
           GITHUB_PAGES: "true"
 
+      - name: Normalize GitHub Pages asset paths
+        run: cp -R dist/client/casa-da-lagoa-site/_next dist/client/_next
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
