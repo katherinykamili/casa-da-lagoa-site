@@ -35,6 +35,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .skip-link:focus { top: 1rem; }
 .font-display { font-family: var(--font-serif); }
 .eyebrow { font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.hero-location { display: inline-flex; width: fit-content; padding: .45rem .75rem; background: rgba(22, 60, 53, .82); color: #fffdf8; text-shadow: 0 1px 2px rgba(0, 0, 0, .25); backdrop-filter: blur(6px); }
+.hero-booking-button { border: 1px solid #f6f3ec; background: #f6f3ec; color: #163c35; }
 .container-site { width: min(100% - 2rem, 76rem); margin-inline: auto; }
 .section-space { padding-block: clamp(4.5rem, 10vw, 8rem); }
 .wave-line { width: 8rem; height: 1.3rem; color: var(--lake); }

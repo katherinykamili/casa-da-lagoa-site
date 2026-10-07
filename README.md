@@ -69,5 +69,5 @@ Faça as alterações, confirme com `npm run build` e envie um novo commit para 
 
 - Booking: `https://www.booking.com/Share-TJTWD5`
 - Airbnb: anúncio `1236968788522968108`
-- WhatsApp: `+55 47 98810-5607`
+- WhatsApp: `+55 47 98810-4607`
 - Instagram: `@casadalagoa.ofc`
